@@ -1,0 +1,234 @@
+{
+  "context": {
+    "activity": "Seated rest, then walking",
+    "customFields": [
+      {
+        "key": "protocol",
+        "value": "v1"
+      }
+    ],
+    "placements": {
+      "89672C22": "upper_arm_left",
+      "971A3624": "chest"
+    },
+    "studyId": "PILOT-01",
+    "subject": {
+      "ageYears": 34,
+      "fitzpatrickSkinType": 2,
+      "heightCm": 178,
+      "sex": "male",
+      "weightKg": 74
+    },
+    "subjectId": "S01"
+  },
+  "devices": [
+    {
+      "batteryAtEnd": 78,
+      "batteryAtStart": 78,
+      "clockOffsetMs": 305.08349609375,
+      "firmwareVersion": "0.1.5",
+      "hardwareVersion": "00784292.02",
+      "id": "89672C22",
+      "information": {
+        "Firmware Revision": "0.1.5",
+        "Hardware Revision": "00784292.02",
+        "Manufacturer Name": "Polar Electro Oy",
+        "Model Number": "INW4J",
+        "SYSTEM_ID_HEX": "A09E1AFFFE89672C",
+        "Serial Number": "89672C22",
+        "Software Revision": "3.0.16"
+      },
+      "model": "INW4J",
+      "name": "Polar Sense 89672C22",
+      "timeSyncedAt": "2026-10-31T07:15:25.331Z"
+    },
+    {
+      "batteryAtEnd": 90,
+      "batteryAtStart": 90,
+      "clockOffsetMs": 19.08203125,
+      "firmwareVersion": "5.0.0",
+      "hardwareVersion": "00760690.03",
+      "id": "971A3624",
+      "information": {
+        "Firmware Revision": "5.0.0",
+        "Hardware Revision": "00760690.03",
+        "Manufacturer Name": "Polar Electro Oy",
+        "Model Number": "H10",
+        "SYSTEM_ID_HEX": "A09E1AFFFE971A36",
+        "Serial Number": "971A3624",
+        "Software Revision": "4.2.0"
+      },
+      "model": "H10",
+      "name": "Polar H10 971A3624",
+      "timeSyncedAt": "2026-10-31T07:14:20.386Z"
+    }
+  ],
+  "endedAt": "2026-10-31T07:16:58.760Z",
+  "environmentAtEnd": {
+    "capturedAt": "2026-10-31T07:16:58.794Z",
+    "notes": [],
+    "phone": {
+      "batteryLevel": 0.75,
+      "batteryState": "unplugged",
+      "freeDiskBytes": 114254023921,
+      "locale": "en_FI",
+      "lowPowerMode": false,
+      "thermalState": "nominal"
+    }
+  },
+  "environmentAtStart": {
+    "capturedAt": "2026-10-31T07:15:54.018Z",
+    "notes": [],
+    "phone": {
+      "batteryLevel": 0.75,
+      "batteryState": "unplugged",
+      "freeDiskBytes": 114254023921,
+      "locale": "en_FI",
+      "lowPowerMode": false,
+      "thermalState": "nominal"
+    }
+  },
+  "events": [],
+  "formatVersion": 1,
+  "host": {
+    "appBuild": "1",
+    "appVersion": "1.0",
+    "deviceModel": "iPhone18,1",
+    "polarSdkVersion": "8.5.0",
+    "systemVersion": "27.0.1"
+  },
+  "id": "6877F543-D6C9-463C-9BB1-45D503945CE6",
+  "notes": "Example log: Polar H10 (chest) and Polar Verity Sense (left upper arm).",
+  "polarEpochUnixSeconds": 946684800,
+  "source": "online",
+  "startedAt": "2026-10-31T07:15:53.968Z",
+  "status": "complete",
+  "streams": [
+    {
+      "columns": [
+        "unix_time_ms",
+        "label"
+      ],
+      "file": "markers.csv",
+      "rowCount": 1,
+      "settings": {},
+      "signal": "markers"
+    },
+    {
+      "columns": [
+        "rx_unix_ms",
+        "frame",
+        "hr_bpm",
+        "corrected_hr_bpm",
+        "ppg_quality",
+        "rr_available",
+        "contact",
+        "contact_supported"
+      ],
+      "deviceId": "89672C22",
+      "file": "89672C22_hr.csv",
+      "rowCount": 65,
+      "settings": {},
+      "signal": "hr",
+      "unit": "bpm"
+    },
+    {
+      "columns": [
+        "sensor_ts_ns",
+        "frame",
+        "rx_unix_ms",
+        "x_mg",
+        "y_mg",
+        "z_mg"
+      ],
+      "deviceId": "971A3624",
+      "file": "971A3624_acc.csv",
+      "rowCount": 12924,
+      "sampleRateHz": 200,
+      "settings": {
+        "range": "8",
+        "resolution": "16",
+        "sampleRate": "200"
+      },
+      "signal": "acc",
+      "unit": "mG"
+    },
+    {
+      "columns": [
+        "sensor_ts_ns",
+        "frame",
+        "rx_unix_ms",
+        "ecg_uv"
+      ],
+      "deviceId": "971A3624",
+      "file": "971A3624_ecg.csv",
+      "rowCount": 8395,
+      "sampleRateHz": 130,
+      "settings": {
+        "resolution": "14",
+        "sampleRate": "130"
+      },
+      "signal": "ecg",
+      "unit": "µV"
+    },
+    {
+      "columns": [
+        "rx_unix_ms",
+        "frame",
+        "hr_bpm",
+        "corrected_hr_bpm",
+        "ppg_quality",
+        "rr_available",
+        "contact",
+        "contact_supported"
+      ],
+      "deviceId": "971A3624",
+      "file": "971A3624_hr.csv",
+      "rowCount": 64,
+      "settings": {},
+      "signal": "hr",
+      "unit": "bpm"
+    },
+    {
+      "columns": [
+        "rx_unix_ms",
+        "frame",
+        "rr_ms"
+      ],
+      "deviceId": "971A3624",
+      "file": "971A3624_rr.csv",
+      "rowCount": 93,
+      "settings": {},
+      "signal": "rr",
+      "unit": "ms"
+    },
+    {
+      "columns": [
+        "sensor_ts_ns",
+        "frame",
+        "rx_unix_ms",
+        "frame_type",
+        "ch0",
+        "ch1",
+        "ch2",
+        "ch3"
+      ],
+      "deviceId": "89672C22",
+      "file": "89672C22_ppg.csv",
+      "rowCount": 3514,
+      "sampleRateHz": 55,
+      "settings": {
+        "channels": "4",
+        "frameType": "ppg3_ambient1",
+        "resolution": "22",
+        "sampleRate": "55"
+      },
+      "signal": "ppg",
+      "unit": "ADC"
+    }
+  ],
+  "tags": [
+    "example"
+  ],
+  "timeZone": "Europe/Helsinki"
+}

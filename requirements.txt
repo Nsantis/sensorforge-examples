@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+matplotlib
+pyarrow      # faster CSV loading (optional)
+ipympl       # zoomable figures (optional)
+jupyterlab

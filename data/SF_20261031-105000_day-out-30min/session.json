@@ -1,0 +1,327 @@
+{
+  "context": {
+    "activity": "Science centre visit, lunch at 11:07",
+    "placements": {
+      "89672C22": "upper_arm_left",
+      "971A3624": "chest"
+    },
+    "studyId": "example"
+  },
+  "devices": [
+    {
+      "batteryAtEnd": 50,
+      "batteryAtStart": 90,
+      "clockOffsetMs": -189.706298828125,
+      "firmwareVersion": "5.0.0",
+      "hardwareVersion": "00760690.03",
+      "id": "971A3624",
+      "information": {
+        "Firmware Revision": "5.0.0",
+        "Hardware Revision": "00760690.03",
+        "Manufacturer Name": "Polar Electro Oy",
+        "Model Number": "H10",
+        "SYSTEM_ID_HEX": "A09E1AFFFE971A36",
+        "Serial Number": "971A3624",
+        "Software Revision": "4.2.0"
+      },
+      "model": "H10",
+      "name": "Polar H10 971A3624",
+      "timeSyncedAt": "2026-10-31T08:18:36.128Z"
+    },
+    {
+      "batteryAtEnd": 64,
+      "batteryAtStart": 96,
+      "clockOffsetMs": 1362.1435546875,
+      "firmwareVersion": "0.1.5",
+      "hardwareVersion": "00784292.02",
+      "id": "89672C22",
+      "information": {
+        "Firmware Revision": "0.1.5",
+        "Hardware Revision": "00784292.02",
+        "Manufacturer Name": "Polar Electro Oy",
+        "Model Number": "INW4J",
+        "SYSTEM_ID_HEX": "A09E1AFFFE89672C",
+        "Serial Number": "89672C22",
+        "Software Revision": "3.0.16"
+      },
+      "model": "INW4J",
+      "name": "Polar Sense 89672C22",
+      "timeSyncedAt": "2026-10-31T08:21:00.072Z"
+    }
+  ],
+  "endedAt": "2026-10-31T09:20:00.000Z",
+  "environmentAtEnd": {
+    "capturedAt": "2026-10-31T13:07:36.430Z",
+    "notes": [],
+    "phone": {
+      "batteryLevel": 0.699999988079071,
+      "batteryState": "unplugged",
+      "freeDiskBytes": 115701705569,
+      "locale": "en_FI",
+      "lowPowerMode": false,
+      "thermalState": "nominal"
+    },
+    "weather": {
+      "apparentTemperatureC": 2.7065377235412598,
+      "attributionURL": "https://weatherkit.apple.com/legal-attribution.html",
+      "cloudCover": 0.97,
+      "condition": "cloudy",
+      "dewPointC": 3.44451904296875,
+      "humidity": 0.88,
+      "isDaylight": true,
+      "observedAt": "2026-10-31T13:07:36.000Z",
+      "precipitationIntensityMMH": 0,
+      "pressureHPa": 1029.2318115234375,
+      "pressureTrend": "Steady",
+      "source": "Apple Weather",
+      "temperatureC": 5.271033763885498,
+      "uvIndex": 0,
+      "visibilityM": 36342.01171875,
+      "windDirectionDeg": 201,
+      "windGustMS": 6.37862185975647,
+      "windSpeedMS": 3.166034370288849
+    }
+  },
+  "environmentAtStart": {
+    "capturedAt": "2026-10-31T08:21:19.270Z",
+    "notes": [],
+    "phone": {
+      "batteryLevel": 0.800000011920929,
+      "batteryState": "charging",
+      "freeDiskBytes": 116087193892,
+      "locale": "en_FI",
+      "lowPowerMode": false,
+      "thermalState": "nominal"
+    },
+    "weather": {
+      "apparentTemperatureC": 2.267897844314575,
+      "attributionURL": "https://weatherkit.apple.com/legal-attribution.html",
+      "cloudCover": 0.92,
+      "condition": "cloudy",
+      "dewPointC": 2.3436737060546875,
+      "humidity": 0.94,
+      "isDaylight": true,
+      "observedAt": "2026-10-31T08:19:57.000Z",
+      "precipitationIntensityMMH": 0,
+      "pressureHPa": 1029.7105712890625,
+      "pressureTrend": "Rising",
+      "source": "Apple Weather",
+      "temperatureC": 3.2165279388427734,
+      "uvIndex": 0,
+      "visibilityM": 15484.9453125,
+      "windDirectionDeg": 196,
+      "windGustMS": 3.9572323561859135,
+      "windSpeedMS": 2.0213188341388704
+    }
+  },
+  "events": [],
+  "formatVersion": 1,
+  "host": {
+    "appBuild": "1",
+    "appVersion": "1.0",
+    "deviceModel": "iPhone18,1",
+    "polarSdkVersion": "8.5.0",
+    "systemVersion": "27.0.1"
+  },
+  "id": "FAA2E9A9-BAEB-4A74-B4E3-ECA4A5C6E420",
+  "notes": "Excerpt 2026-10-31T08:50:00.000Z – 2026-10-31T09:20:00.000Z of a longer log.",
+  "polarEpochUnixSeconds": 946684800,
+  "source": "online",
+  "startedAt": "2026-10-31T08:50:00.000Z",
+  "status": "complete",
+  "streams": [
+    {
+      "columns": [
+        "unix_time_ms",
+        "label"
+      ],
+      "file": "markers.csv",
+      "rowCount": 1,
+      "settings": {},
+      "signal": "markers"
+    },
+    {
+      "columns": [
+        "rx_unix_ms",
+        "frame",
+        "hr_bpm",
+        "corrected_hr_bpm",
+        "ppg_quality",
+        "rr_available",
+        "contact",
+        "contact_supported"
+      ],
+      "deviceId": "971A3624",
+      "file": "971A3624_hr.csv",
+      "rowCount": 1800,
+      "settings": {},
+      "signal": "hr",
+      "unit": "bpm"
+    },
+    {
+      "columns": [
+        "rx_unix_ms",
+        "frame",
+        "rr_ms"
+      ],
+      "deviceId": "971A3624",
+      "file": "971A3624_rr.csv",
+      "rowCount": 2309,
+      "settings": {},
+      "signal": "rr",
+      "unit": "ms"
+    },
+    {
+      "columns": [
+        "sensor_ts_ns",
+        "frame",
+        "rx_unix_ms",
+        "frame_type",
+        "ch0",
+        "ch1",
+        "ch2",
+        "ch3"
+      ],
+      "deviceId": "89672C22",
+      "file": "89672C22_ppg.csv",
+      "rowCount": 98639,
+      "sampleRateHz": 55,
+      "settings": {
+        "channels": "4",
+        "frameType": "ppg3_ambient1",
+        "resolution": "22",
+        "sampleRate": "55"
+      },
+      "signal": "ppg",
+      "unit": "ADC"
+    },
+    {
+      "columns": [
+        "sensor_ts_ns",
+        "frame",
+        "rx_unix_ms",
+        "x_mg",
+        "y_mg",
+        "z_mg"
+      ],
+      "deviceId": "89672C22",
+      "file": "89672C22_acc.csv",
+      "rowCount": 95725,
+      "sampleRateHz": 52,
+      "settings": {
+        "channels": "3",
+        "range": "8",
+        "resolution": "16",
+        "sampleRate": "52"
+      },
+      "signal": "acc",
+      "unit": "mG"
+    },
+    {
+      "columns": [
+        "sensor_ts_ns",
+        "frame",
+        "rx_unix_ms",
+        "x_gauss",
+        "y_gauss",
+        "z_gauss"
+      ],
+      "deviceId": "89672C22",
+      "file": "89672C22_mag.csv",
+      "rowCount": 182545,
+      "sampleRateHz": 100,
+      "settings": {
+        "channels": "3",
+        "range": "50",
+        "resolution": "16",
+        "sampleRate": "100"
+      },
+      "signal": "mag",
+      "unit": "G"
+    },
+    {
+      "columns": [
+        "sensor_ts_ns",
+        "frame",
+        "rx_unix_ms",
+        "x_dps",
+        "y_dps",
+        "z_dps"
+      ],
+      "deviceId": "89672C22",
+      "file": "89672C22_gyro.csv",
+      "rowCount": 95766,
+      "sampleRateHz": 52,
+      "settings": {
+        "channels": "3",
+        "range": "2000",
+        "resolution": "16",
+        "sampleRate": "52"
+      },
+      "signal": "gyro",
+      "unit": "°/s"
+    },
+    {
+      "columns": [
+        "sensor_ts_ns",
+        "frame",
+        "rx_unix_ms",
+        "x_mg",
+        "y_mg",
+        "z_mg"
+      ],
+      "deviceId": "971A3624",
+      "file": "971A3624_acc.csv",
+      "rowCount": 362124,
+      "sampleRateHz": 200,
+      "settings": {
+        "range": "8",
+        "resolution": "16",
+        "sampleRate": "200"
+      },
+      "signal": "acc",
+      "unit": "mG"
+    },
+    {
+      "columns": [
+        "sensor_ts_ns",
+        "frame",
+        "rx_unix_ms",
+        "ecg_uv"
+      ],
+      "deviceId": "971A3624",
+      "file": "971A3624_ecg.csv",
+      "rowCount": 234403,
+      "sampleRateHz": 130,
+      "settings": {
+        "resolution": "14",
+        "sampleRate": "130"
+      },
+      "signal": "ecg",
+      "unit": "µV"
+    },
+    {
+      "columns": [
+        "sensor_ts_ns",
+        "frame",
+        "rx_unix_ms",
+        "ppi_ms",
+        "error_estimate_ms",
+        "hr_bpm",
+        "blocker",
+        "skin_contact",
+        "skin_contact_supported"
+      ],
+      "deviceId": "89672C22",
+      "file": "89672C22_ppi.csv",
+      "rowCount": 1853,
+      "settings": {},
+      "signal": "ppi",
+      "unit": "ms"
+    }
+  ],
+  "tags": [
+    "example"
+  ],
+  "timeZone": "Europe/Helsinki"
+}
