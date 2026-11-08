@@ -1,6 +1,6 @@
 # SensorForge examples
 
-Example notebooks and real data for [SensorForge](https://sensorforge.app), the iPhone app that records lossless raw data from Polar sensors (ECG, PPG, PP intervals, acceleration, gyroscope, magnetometer …) into plain CSV files with a `session.json` manifest.
+Example notebooks and real data for [SensorForge](https://nsantis.github.io/sensorforge/), the iPhone app that records lossless raw data from Polar sensors (ECG, PPG, PP intervals, acceleration, gyroscope, magnetometer …) into plain CSV files with a `session.json` manifest.
 
 Everything here is plain Python (pandas, NumPy, SciPy, Matplotlib) and MIT licensed: copy whatever you need into your own pipeline.
 
@@ -29,7 +29,7 @@ VS Code works too: open the folder, pick the `.venv` interpreter as the kernel. 
 
 ## Data
 
-All logs are folders exactly as the app writes them: one CSV per sensor stream plus `session.json`. The format is documented at <https://sensorforge.app/#format>; sensor timestamps are nanoseconds since 2000-01-01 UTC (the Polar epoch).
+All logs are folders exactly as the app writes them: one CSV per sensor stream plus `session.json`. Sensor timestamps are nanoseconds since 2000-01-01 UTC (the Polar epoch).
 
 | Folder | Content |
 |---|---|
