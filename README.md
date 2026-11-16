@@ -39,6 +39,18 @@ All logs are folders exactly as the app writes them: one CSV per sensor stream p
 
 **Your own logs:** in the app, *Logs › a log › Share files* (or the Files app › SensorForge › Logs). Copy the `SF_…` folder into `data/` and change `LOG` at the top of a notebook.
 
+## Live data
+
+With Pro, the app can also stream every frame over a WebSocket while it records, either to computers on the same Wi-Fi or to your own server. [`LIVE-STREAM-API.md`](LIVE-STREAM-API.md) describes the protocol, and `tools/sensorforge_live_client.py` receives it in both directions and can save the feed as a log folder the notebooks open. You can try it without a phone:
+
+```bash
+pip install "websockets>=13"
+python tools/sensorforge_live_client.py replay data/SF_20261031-091553_2-sensors   # terminal 1: stands in for the phone
+python tools/sensorforge_live_client.py connect ws://127.0.0.1:8765 --save live/   # terminal 2: the receiver
+```
+
+The feed is personal data and the phone-as-server mode is unauthenticated; read the *Security* section of the protocol document before using it outside your own network.
+
 ## Helpers
 
 `notebooks/sfutils.py` holds what the notebooks share: `load_session` (manifest + CSVs, everything on the phone clock), zoomable plotting (`plot_env`, `ZoomSpectrogram`), `PPGGrid`, a simple R-peak detector and the HRV functions. Each function is short and documented.
