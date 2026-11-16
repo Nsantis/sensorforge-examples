@@ -5,3 +5,4 @@ matplotlib
 pyarrow      # faster CSV loading (optional)
 ipympl       # zoomable figures (optional)
 jupyterlab
+websockets>=13   # live streaming example (optional)
